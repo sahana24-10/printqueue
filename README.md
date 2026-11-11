@@ -1,16 +1,23 @@
-# React + Vite
+# PrintQueue: A Web-Based Smart Print Queue Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack web application designed to eliminate long waiting times and crowding at campus stationery shops by enabling remote PDF uploads, automated page counting, transparent pricing, and live queue tracking[cite: 2].
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Remote Document Upload:** Students can upload PDF documents from anywhere on or off campus[cite: 2].
+- **Automatic Page Detection & Pricing:** Automatically detects page counts and calculates total costs based on color/B&W rates and binding options[cite: 2].
+- **Flexible Payments:** Supports digital UPI/GPay/PhonePe payments as well as Cash on Pick Up[cite: 2].
+- **Live Stationer Dashboard:** Real-time summary counters (*Total Received*, *Pending Queue*, *Currently Printing*, *Ready for Pickup*) with one-click status updates[cite: 2].
+- **Order History:** Personal student view tracking active and completed print requests[cite: 2].
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js, React Router, HTML5, CSS3, Tailwind CSS[cite: 2]
+- **Backend:** FastAPI, Python, SQLAlchemy ORM, Pydantic[cite: 2]
+- **Database & Storage:** Relational Database (PostgreSQL / SQLite), Local File System Storage[cite: 2]
 
-## Expanding the Oxlint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- `frontend/` — React single-page application and UI components[cite: 2]
+- `backend/` — FastAPI REST API routers, database models, and business logic services[cite: 2]
+- `uploads/` — Secure directory for storing incoming print job documents[cite: 2]
